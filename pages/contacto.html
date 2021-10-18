@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="banner" id="header">
+        <a href="../index.html"><img class="logo" src="../img/logo.png" alt="logo"></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/galeria.html">Galería</a></li>
+                <li><a href="../pages/alquileres.html">Alquiler Equipos</a></li>
+                <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Seccion formulario de contacto -->
+
+    <section class="form-section">
+        <div>
+
+            <h1>Contacto</h1>
+
+            <a href="../index.html">Volver a Inicio</a>
+
+            <h3>Dejanos tu consulta</h3>
+        </div>
+
+        <!-- Formulario de contacto -->
+
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Ingresa tu nombre">
+
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="Ingresa tu apellido">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="tucorreo@mail.com">
+
+            <label for="genero">Servicio</label>
+            <select id="genero">
+                <option value="seleccionar">Seleccionar</option>
+                <option value="sonido">Sonido</option>
+                <option value="iluminacion">Iluminación</option>
+                <option value="multimedia">Multimedia</option>
+                <option value="otros">Otros</option>
+
+
+            </select>
+            <div>
+
+                <label for="novedades">Quiero recibir novedades en mi correo</label>
+                <input type="checkbox" name="novedades" id="novedades">
+            </div>
+
+            <label class="label-consulta" for="consulta">Consulta</label>
+            <textarea name="consulta" cols="25" rows="10" id="consulta" placeholder="Ingresa tu consulta"></textarea>
+
+
+            <input class="btn" type="submit" value="Enviar" id="enviar-btn">
+            <input class="btn" type="reset" value="Borrar formulario" id="reset-btn">
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <h3><a href="./contacto.html">Contactanos</a></h3>
+        <div>
+            <a href="#footer"><i class="fab fa-facebook-square icon"></i></a>
+            <a href="#footer"><i class="fab fa-linkedin icon"></i></a>
+            <a href="#footer"><i class="fab fa-instagram-square icon"></i></a>
+            <a href="#footer"><i class="fab fa-youtube-square icon"></i></a>
+        </div>
+        <a href="#header">Ir al inicio</a>
+    </footer>
+    <script src="https://kit.fontawesome.com/5f9cff3719.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

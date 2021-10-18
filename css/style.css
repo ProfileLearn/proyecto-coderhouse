@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header------------------------------------------- */
+
+.banner {
+    width: 100vw;
+    background-image: url("../img/turntable.jpg");
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+
+.navbar ul {
+    width: 100%;
+    list-style: none;
+    padding: 50px;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.navbar ul li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    color: whitesmoke;
+    width: 10rem;
+}
+
+.navbar a:focus {
+    box-shadow: 2px 2px 3px whitesmoke;
+}
+
+/* Media query header */
+/* 
+@media (max-width: 1100px) {
+    .navbar a {
+        padding: .5rem;
+        margin: .1rem 1rem;
+    }
+    .navbar {
+        width: 100%;
+    }
+}
+ */
+@media (max-width: 992px) {
+    .logo {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .banner {
+        flex-direction: column;
+    }
+    .navbar ul {
+        display: block;
+        margin: 0;
+    }
+    .navbar ul li a {
+        width: 100vw;
+        padding: 1rem;
+        margin: 0;
+        border: 1px solid white;
+    }
+}
+
+/* Servicios-------------------------------------------------- */
+
+.servicios {
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(59, 57, 57, 1) 1%, rgba(7, 8, 9, 1) 100%);
+    padding: 4rem 0;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.servicios h1 {
+    color: antiquewhite;
+    margin-bottom: 1.5rem;
+}
+
+.servicios h3 {
+    color: rgb(130, 233, 233);
+    margin: 1rem 0;
+}
+
+.servicios p {
+    color: whitesmoke;
+}
+
+.translate {
+    transition: transform 200ms;
+}
+
+.translate:hover {
+    transform: translateX(3px);
+    cursor: default;
+}
+
+/* Trabajos realizados------------------------------- */
+
+.trabajos-realizados h3 {
+    text-align: center;
+    margin: 2rem 0;
+    color: black;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-trabajos {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+.img-trabajos p {
+    padding: 1rem;
+}
+
+.img-trabajos img {
+    width: 400px;
+    height: 300px;
+}
+
+/* footer------------------------------------- */
+
+footer {
+    width: 100vw;
+    text-align: center;
+    line-height: 2;
+    background-image: linear-gradient(to right, rgb(71, 70, 70), black);
+    padding: 2rem;
+    margin: 0;
+}
+
+footer a {
+    color: aliceblue;
+}
+
+footer div {
+    margin-bottom: .5rem;
+}
+
+.icon {
+    color: white;
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+/* Galería---------------------------------------------- */
+
+.galeria-banner {
+    text-align: center;
+    grid-area: banner;
+    background: rgb(63, 150, 137);
+    background: radial-gradient(circle, rgba(63, 150, 137, 1) 1%, rgb(84, 126, 168) 100%);
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "banner banner banner banner";
+    grid-gap: 1rem;
+    padding: 1rem;
+    background: radial-gradient(circle, rgba(54, 135, 231, 1) 0%, rgba(93, 182, 179, 1) 100%);
+    border: 2px solid black;
+}
+
+/* @media (max-width: 1100px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "banner banner banner";
+    }
+} */
+
+/* imagenes de galeria----------------------------------------*/
+
+.img-galeria {
+    display: flex;
+    justify-content: center;
+}
+
+.img-galeria img {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: transform 500ms;
+}
+
+.img-galeria img:hover {
+    transform: scale(1.4);
+}
+
+/* Alquileres equipos------------------------------------------*/
+
+main {
+    background-color: rgb(14, 13, 13);
+    background-image: url(../img/silueta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    border: 2px solid black;
+}
+
+.strong {
+    font-weight: 900;
+}
+
+.alquiler-equipos {
+    padding: 1.5rem;
+    text-align: justify;
+    color: white;
+}
+
+.alquiler-equipos p {
+    margin: 2rem 0 1rem 0;
+}
+
+.alquiler-equipos h1 {
+    text-align: center;
+}
+
+.equipos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 230px;
+    height: 140px;
+    background-color: black;
+    color: antiquewhite;
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.equipos, .equipos h3 {
+    animation: animacion-equipos;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+}
+
+@keyframes animacion-equipos {
+    0% {
+        border-color: whitesmoke;
+        color: whitesmoke;
+    }
+    50% {
+        border-color: turquoise;
+        color: turquoise;
+    }
+    100% {
+        border-color: whitesmoke;
+        color: whitesmoke;
+    }
+}
+
+.equipos h3 {
+    text-align: center;
+}
+
+.section-equipos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap row;
+    height: auto;
+}
+
+.equipo-sonido {
+    background-image: url(../img/equipos3.jpg);
+    background-size: cover;
+}
+
+.equipo-iluminacion {
+    background-image: url(../img/iluminacion.jpg);
+    background-size: cover;
+}
+
+.equipo-multimedia {
+    background-image: url(../img/multimedia.jpg);
+    background-size: cover;
+}
+
+.equipo-proyeccion {
+    background-image: url(../img/proyeccion.jpg);
+    background-size: cover;
+}
+
+.equipo-conferencias {
+    background-image: url(../img/videoconferencia.jpg);
+    background-size: cover;
+}
+
+/* Form section  CONTACTO------------------------------------*/
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/record-player.jpg);
+    background-color: rgb(112, 90, 90);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.form-section div {
+    padding: .5rem;
+}
+
+.form-section h1, .form-section h3 {
+    color: rgb(17, 18, 19);
+    margin: 1rem;
+}
+
+.form-section a {
+    text-decoration: none;
+    color: aquamarine;
+    margin: 1rem;
+}
+
+/* Form--------------------------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    background-color: rgb(15, 19, 18);
+    padding: 2rem;
+    width: 30vw;
+    max-width: 350px;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}
+
+form .label-consulta, form textarea, #nombre, #apellido, #email, form .btn, form select {
+    display: block;
+    margin: .4rem;
+}
+
+form, input, textarea {
+    border-radius: 8px;
+    padding: .5rem;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .btn {
+    background-color: whitesmoke;
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+}
+
+form .btn:hover {
+    color: rgb(131, 22, 22)
+}
+
+#enviar-btn {
+    order: 0
+}
+
+#reset-btn {
+    order: 1
+}
+
+/* Sobre nosotros-------------------- */
+
+.servicios-audiovisuales {
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    padding: 2rem;
+}
+
+.servicios-audiovisuales h3 {
+    margin-bottom: 3.5rem;
+    color: whitesmoke;
+}
+
+.servicios-audiovisuales h4 {
+    margin-bottom: 1rem;
+}
+
+.sobre-nosotros {
+    text-align: center;
+    padding: 2rem;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(to right, rgb(17, 17, 17) 0%, rgb(172, 193, 216) 50%, rgb(40, 49, 59) 100%);
+    border: 2px solid black;
+}
+
+/* Shadow----------------------------------- */
+
+.text-shadow-light {
+    text-shadow: 1px 1px 2px white;
+}
+
+.text-shadow-dark {
+    text-shadow: 1px 1px 2px grey;
+}
+
+.box-shadow-light {
+    box-shadow: 1px 1px 2px white;
+}
