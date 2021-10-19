@@ -194,11 +194,32 @@ footer div {
     border-radius: 5px;
 }
 
+.img-galeria {
+    display: flex;
+    justify-content: center;
+}
+
+.img-galeria img {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: transform 500ms;
+}
+
+.img-galeria img:hover {
+    transform: scale(1.09);
+}
+
 @media (max-width: 1300px) {
     .galeria {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         grid-template-areas: "banner banner banner";
+    }
+    .img-galeria img:hover {
+        transform: scale(1.07);
     }
 }
 
@@ -208,6 +229,9 @@ footer div {
         grid-template-rows: auto;
         grid-template-areas: "banner banner";
     }
+    .img-galeria img:hover {
+        transform: scale(1.06);
+    }
 }
 
 @media (max-width: 768px) {
@@ -216,27 +240,12 @@ footer div {
         grid-template-rows: auto;
         grid-template-areas: "banner";
     }
+    .img-galeria img:hover {
+        transform: scale(1.05);
+    }
 }
 
 /* imagenes de galeria----------------------------------------*/
-
-.img-galeria {
-    display: flex;
-    justify-content: center;
-}
-
-.img-galeria img {
-    width: 300px;
-    height: 200px;
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    transition: transform 500ms;
-}
-
-.img-galeria img:hover {
-    transform: scale(1.4);
-}
 
 /* Alquileres equipos------------------------------------------*/
 
@@ -413,7 +422,6 @@ form .btn:hover {
 #reset-btn {
     order: 1
 }
-
 
 /* Sobre nosotros-------------------- */
 
