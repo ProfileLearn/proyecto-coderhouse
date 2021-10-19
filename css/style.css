@@ -374,11 +374,9 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: space-around;
     background-color: rgb(15, 19, 18);
     padding: 2rem;
-    width: 30vw;
-    max-width: 350px;
+    width: 350px;
     margin-bottom: 1rem;
     color: whitesmoke;
 }
@@ -415,6 +413,7 @@ form .btn:hover {
 #reset-btn {
     order: 1
 }
+
 
 /* Sobre nosotros-------------------- */
 
