@@ -16,16 +16,20 @@
     <!-- Header -->
 
     <header class="banner" id="header">
-        
-            <a  href="index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
-        
+
+        <!-- Logo -->
+
+        <a href="index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
+
+        <!-- nav con botones de bootstrap -->
+
         <nav class="navbar">
             <ul>
-                <li><a class="btn btn-dark" role="button" href="index.html">Inicio</a></li>
-                <li><a class="btn btn-dark" role="button" href="./pages/galeria.html">Galería</a></li>
-                <li><a class="btn btn-dark" role="button" href="./pages/alquileres.html">Alquiler Equipos</a></li>
-                <li><a class="btn btn-dark" role="button" href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a class="btn btn-dark" role="button" href="./pages/contacto.html">Contacto</a></li>
+                <li><a class="btn btn-info" role="button" href="index.html">Inicio</a></li>
+                <li><a class="btn btn-info" role="button" href="./pages/galeria.html">Galería</a></li>
+                <li><a class="btn btn-info" role="button" href="./pages/alquileres.html">Alquiler Equipos</a></li>
+                <li><a class="btn btn-info" role="button" href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a class="btn btn-info" role="button" href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -55,45 +59,56 @@
         </div>
     </section>
 
+    <!-- Carousel -->
 
-        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active border border-5 border-secondary">
-                    <img src="./img/iluminacion-parlamento.jpg" class="d-block w-100" alt="Iluminación Parlamento">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Iluminación Parlamento</h5>
-                    </div>
-                </div>
-                <div class="carousel-item border border-5 border-secondary">
-                    <img src="./img/iluminacion-Palacio.jpg" class="d-block w-100" alt="Iluminación Palacio">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Iluminación Palacio</h5>
-                    </div>
-                </div>
-                <div class="carousel-item border border-5 border-secondary">
-                    <img src="./img/conferencias.jpg" class="d-block w-100" alt="Conferencias">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Conferencias</h5>
-                    </div>
+    <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active border border-5 border-secondary">
+                <img src="./img/iluminacion-parlamento.jpg" class="d-block w-100" alt="Iluminación Parlamento">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Iluminación Parlamento</h5>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </section>
+            <div class="carousel-item border border-5 border-secondary">
+                <img src="./img/iluminacion-Palacio.jpg" class="d-block w-100" alt="Iluminación Palacio">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Iluminación Palacio</h5>
+                </div>
+            </div>
+            <div class="carousel-item border border-5 border-secondary">
+                <img src="./img/conferencia.jpg" class="d-block w-100" alt="Conferencias">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Conferencias</h5>
+                </div>
+            </div>
+            <div class="carousel-item border border-5 border-secondary">
+                <img src="./img/conferencia1.jpg" class="d-block w-100" alt="Conferencias">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Conferencias</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </section>
 
     <!-- footer -->
 

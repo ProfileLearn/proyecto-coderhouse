@@ -212,6 +212,8 @@ footer div {
     transform: scale(1.09);
 }
 
+/* Media query galería */
+
 @media (max-width: 1300px) {
     .galeria {
         grid-template-columns: repeat(3, 1fr);
@@ -245,7 +247,6 @@ footer div {
     }
 }
 
-/* imagenes de galeria----------------------------------------*/
 
 /* Alquileres equipos------------------------------------------*/
 
