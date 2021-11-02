@@ -99,7 +99,7 @@
   margin-bottom: 1.5rem;
 }
 
-.servicios h3 {
+.servicios h5 {
   color: #82e9e9;
   margin: 1rem 0;
 }
@@ -119,42 +119,6 @@
   -webkit-transform: translateX(3px);
           transform: translateX(3px);
   cursor: default;
-}
-
-/* Trabajos realizados------------------------------- */
-.trabajos-realizados h3 {
-  text-align: center;
-  margin: 2rem 0;
-  color: black;
-}
-
-.imagenes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.img-trabajos {
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 10px;
-  color: white;
-  background-color: black;
-  margin-bottom: 1rem;
-}
-
-.img-trabajos p {
-  padding: 1rem;
-}
-
-.img-trabajos img {
-  width: 400px;
-  height: 300px;
 }
 
 /* footer------------------------------------- */
@@ -548,5 +512,17 @@ form .btn:hover {
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.trabajos-realizados {
+  background-color: #539da0;
+  padding: 2rem 5rem;
+}
+
+.trabajos-realizados h3 {
+  text-align: center;
+  margin: 0;
+  color: black;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
