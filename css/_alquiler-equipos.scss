@@ -1,0 +1,103 @@
+/* Alquileres equipos------------------------------------------*/
+
+main {
+  background-color: rgb(14, 13, 13);
+  background-image: url(../img/silueta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  border: 2px solid black;
+}
+
+.strong {
+  font-weight: 900;
+}
+
+.main__alquiler-equipos {
+  padding: 1.5rem;
+  text-align: justify;
+  color: white;
+
+  p {
+    margin: 2rem 0 1rem 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.section-equipos__equipos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 230px;
+  height: 140px;
+  background-color: black;
+  color: antiquewhite;
+  border: 4px solid whitesmoke;
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+  animation: animacion-equipos;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  h3 {
+    text-align: center;
+    font-size: larger;
+  }
+}
+
+
+@keyframes animacion-equipos {
+  $whitesmoke: whitesmoke;
+  $turquoise: turquoise;
+
+  0% {
+    border-color: $whitesmoke;
+    color: $whitesmoke;
+  }
+
+  50% {
+    border-color: $turquoise;
+    color: $turquoise;
+  }
+
+  100% {
+    border-color: $whitesmoke;
+    color: $whitesmoke;
+  }
+}
+
+.section-equipos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap row;
+  height: auto;
+}
+
+.section-equipos__equipo--sonido {
+  background-image: url(../img/equipos3.jpg);
+  background-size: cover;
+}
+
+.section-equipos__equipo--iluminacion {
+  background-image: url(../img/iluminacion.jpg);
+  background-size: cover;
+}
+
+.section-equipos__equipo--multimedia {
+  background-image: url(../img/multimedia.jpg);
+  background-size: cover;
+}
+
+.section-equipos__equipo--proyeccion {
+  background-image: url(../img/proyeccion.jpg);
+  background-size: cover;
+}
+
+.section-equipos__equipo--conferencias {
+  background-image: url(../img/videoconferencia.jpg);
+  background-size: cover;
+}

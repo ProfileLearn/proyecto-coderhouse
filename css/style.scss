@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+@import "header";
+@import "servicios";
+@import "trabajos-realizados";
+@import "footer";
+@import "galeria";
+@import "alquiler-equipos";
+@import "form";
+@import "sobre-nosotros";
+
+
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
