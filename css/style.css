@@ -55,11 +55,6 @@
   width: 10rem;
 }
 
-.navbar a:focus {
-  -webkit-box-shadow: 2px 2px 3px whitesmoke;
-          box-shadow: 2px 2px 3px whitesmoke;
-}
-
 /* Media query header */
 @media (max-width: 992px) {
   .logo {
