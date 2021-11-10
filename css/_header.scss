@@ -3,7 +3,6 @@
 $rem-1: 1rem;
 
 .banner {
-  width: 100%;
   background-image: url("../img/turntable.jpg");
   background-color: grey;
   background-repeat: no-repeat;
@@ -31,20 +30,20 @@ $rem-1: 1rem;
 
     li {
       display: flex;
+      a {
+        text-decoration: none;
+        text-align: center;
+        background-color: black;
+        border-radius: 5px;
+        padding: $rem-1;
+        margin: 1vw;
+        font-size: $rem-1;
+        color: whitesmoke;
+        width: 10rem;
+      }
     }
   }
 
-  a {
-    text-decoration: none;
-    text-align: center;
-    background-color: black;
-    border-radius: 5px;
-    padding: $rem-1;
-    margin: 1vw;
-    font-size: $rem-1;
-    color: whitesmoke;
-    width: 10rem;
-  }
 
 }
 
