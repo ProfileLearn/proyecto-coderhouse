@@ -12248,6 +12248,7 @@ main {
           animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  text-shadow: 2px 2px 1px black;
 }
 
 .section-equipos__equipos h3, .section-equipos__equipos .h3 {
