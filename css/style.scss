@@ -22,11 +22,17 @@ body {
 
 .trabajos-realizados {
   background-color: rgb(83, 157, 160);
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   h3 {
     text-align: center;
     margin: 0;
     color: black;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .trabajos-realizados {
+    padding: 2rem 0 0 0;
   }
 }
