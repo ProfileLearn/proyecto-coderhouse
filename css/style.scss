@@ -23,6 +23,7 @@ body {
 .trabajos-realizados {
   background-color: rgb(83, 157, 160);
   padding: 2rem 2rem 0 2rem;
+
   h3 {
     text-align: center;
     margin: 0;
@@ -35,4 +36,8 @@ body {
   .trabajos-realizados {
     padding: 2rem 0 0 0;
   }
+}
+
+.img-carousel {
+  height: 90vh;
 }
