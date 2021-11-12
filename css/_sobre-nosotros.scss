@@ -37,3 +37,31 @@
 .box-shadow-light {
   box-shadow: 1px 1px 2px white;
 }
+
+.section__empresas {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  
+
+  .section__empresas--img {
+    img {
+      width: 200px;
+    }
+    display: flex;
+    justify-content: center;
+    margin: .8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section__empresas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 577px) {
+  .section__empresas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
