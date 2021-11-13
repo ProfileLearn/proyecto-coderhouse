@@ -65,12 +65,15 @@ $rem-1: 1rem;
       display: block;
       margin: 0;
 
-      li a {
-        width: 100vw;
-        padding: $rem-1;
-        margin: 0;
-        border: 1px solid white;
-      }
+      li {
+
+        a {
+          width: 75vw;
+          padding: $rem-1;
+          margin: 0;
+          border: 1px solid white;
+        }
+      } 
     }
   }
 }
